@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+argeye.egg-info/PKG-INFO
+argeye.egg-info/SOURCES.txt
+argeye.egg-info/dependency_links.txt
+argeye.egg-info/top_level.txt
