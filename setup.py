@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
  
 setuptools.setup(
     name="argeye",
-    version="0.0.1",
+    version="0.0.3",
     author="llzmgjzhy", 
     author_email="bmnjklipo@qq.com",
     description="A small optimization of Python library argparse.All original usage are retained,but adding a yml file so the user can set the arguments by editing the yml file.",
