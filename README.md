@@ -16,9 +16,15 @@ _**only one line change,better experience of argparse**_
 
 retained all the original usage of argparse,detailed info refer to [official document](https://docs.python.org/3/library/argparse.html)
 
-### (new)
+### (new)two-mode
 
-#### first run (same as running argparse)
+> two-mode meaning argeye contains two using methods.
+> 
+> the first just same as argparse--using command line.in this way,**the arguments set by yml file will be invalid**
+> 
+> the second is using yml file to set arguments.but notice that,if choosing yml method,**the command line cannot have input for arguments**
+
+#### FIRST RUN (same as running argparse)
 
 ```python
 # examples/main.py
@@ -35,9 +41,11 @@ print(args)
 
 ```python
 # decide whether to input arguments at the terminal based on actual needs
-$ python examples/main.py
+$ python examples/main.py wired --model_name=pd
 Namespace(equip_name='wired',model_name='pd',finetune=True)
 ```
+
+#### USING YML
 
 after executing the above command line operations,the yml file will be created in the work directory.
 
